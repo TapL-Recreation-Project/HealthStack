@@ -1,0 +1,8 @@
+name: HealthStack
+version: ${project.version}
+main: me.swipez.healthstack.HealthStack
+api-version: 1.16
+commands:
+  healthstack:
+    usage: /healthstack <start/stop>
+    description: Starts and stops the health stack challenge!
