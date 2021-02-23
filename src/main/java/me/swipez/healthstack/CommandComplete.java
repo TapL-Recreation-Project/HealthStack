@@ -16,10 +16,15 @@ public class CommandComplete implements TabCompleter {
             complete.add("stop");
             if (args[0].startsWith("sto")){
                 complete.remove("start");
+                complete.remove("reload");
             }
             if (args[0].startsWith("sta")){
                 complete.remove("stop");
+                complete.remove("reload");
             }
+            if (args[0].startsWith("r")){
+                complete.remove("stop");
+                complete.remove("start");
             return complete;
         }
         else if (args.length >= 2){
