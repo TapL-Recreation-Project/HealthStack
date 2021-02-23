@@ -36,7 +36,7 @@ public class StartCommand implements CommandExecutor {
                     }
                 }
                 else {
-                    p.sendMessage(ChatColor.RED+"/healthstack <start/stop>");
+                    p.sendMessage(ChatColor.CYAN+"/healthstack <start/stop>");
                 }
             }
             else {
