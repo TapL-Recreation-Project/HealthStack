@@ -34,6 +34,9 @@ public class StartCommand implements CommandExecutor {
                         Bukkit.broadcastMessage(ChatColor.GREEN+"Health stack challenge has ended!");
                         plugin.gamestarted = false;
                     }
+                    if (args[0].equals("reload")) {
+                        plugin.reloadConfig();
+                        p.sendMessage(ChatColor.GREEN+"Config reloaded!");
                 }
                 else {
                     p.sendMessage(ChatColor.CYAN+"/healthstack <start/stop>");
